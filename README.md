@@ -1,6 +1,6 @@
 ## ANALYSIS AND REPORT OF LITA CUSTOMER DATA
 
-#### PROJECT TITLE: Sales Data Analysis
+#### PROJECT TITLE: Customer Data Analysis
 ---
 [Project Overview](#project-overview)
 
