@@ -116,6 +116,14 @@ WHERE Canceled = 1 AND DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6
 SELECT [SubscriptionType], COUNT(CustomerID) AS NumberofSubscriptions
 FROM ProjectCustomerData
 GROUP BY [SubscriptionType]
+
+#Total number of active and cancelled subscriptions
+SELECT Region, 
+SUM(CASE WHEN Canceled = 0 THEN 1 ELSE 0 END) AS ActiveSubscriptions,
+SUM(CASE WHEN Canceled = 1 THEN 1 ELSE 0 END) AS CancelledSubscriptions
+FROM ProjectCustomerData
+GROUP BY Region
+
 ```
 
 #### Data Visualization
