@@ -1,4 +1,4 @@
-## LITA_Project
+## ANALYSIS AND REPORT OF LITA CUSTOMER DATA
 
 #### PROJECT TITLE: Sales Data Analysis
 ---
@@ -122,10 +122,7 @@ GROUP BY [SubscriptionType]
 ---
 
 
-![Pie chart](https://github.com/user-attachments/assets/41cee80c-5b85-41ed-9b6e-29dd1c713d61)
-
-
-![Bar chart](https://github.com/user-attachments/assets/a6f5e678-bf9e-4caa-947d-b1cee1183a1b)
+![Pie chart](https://github.com/user-attachments/assets/41cee80c-5b85-41ed-9b6e-29dd1c713d61)  ![Bar chart](https://github.com/user-attachments/assets/a6f5e678-bf9e-4caa-947d-b1cee1183a1b)
 
 
 ![Report on Customer data](https://github.com/user-attachments/assets/3f379ba6-b4d5-4b2c-aac8-b143d595322e)
