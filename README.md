@@ -71,7 +71,9 @@ EDA involved the exploring of the Data to answer some questions about the Data s
 - Total Revenue by subscription type
 - Top 3 regions by subscription cancellations
 - Total number if active and cancelled subscriptions
-  
+  ![Screenshot 2024-11-09 161923](https://github.com/user-attachments/assets/9cbc3ba2-bf53-496f-87c3-bafcf69f2a44)
+
+![Screenshot 2024-11-09 161850](https://github.com/user-attachments/assets/01397354-6d8b-4091-b04c-d727251048dd)
 
 #### Data Transformation
 ---
