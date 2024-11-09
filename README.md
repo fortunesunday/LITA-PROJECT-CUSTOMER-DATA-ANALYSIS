@@ -112,10 +112,31 @@ SELECT CustomerID, CustomerName
 FROM ProjectCustomerData
 WHERE Canceled = 1 AND DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) <= 6
 
-#most popular subscription type
-SELECT [SubscriptionType], COUNT(CustomerID) AS NumberofSubscriptions
+#Total number of Customers for each Region
+SELECT Region, COUNT(DISTINCT(CustomerID)) AS Customer
 FROM ProjectCustomerData
-GROUP BY [SubscriptionType]
+GROUP BY Region
+
+#Average subscription duration for all customers
+SELECT AVG(DATEDIFF(Day, SubscriptionStart, SubscriptionEnd)) AS AverageSubscriptionDuration
+FROM ProjectCustomerData
+
+#Customers with subscriptions longer than 12 months 
+SELECT CustomerID, CustomerName
+FROM ProjectCustomerData
+WHERE DATEDIFF(MONTH, SubscriptionStart, SubscriptionEnd) > 12
+
+#Total Revenue by subscription type
+SELECT SubscriptionType, SUM(Revenue) AS Revenue
+FROM ProjectCustomerData
+GROUP BY SubscriptionType
+
+Top 3 Regions by subscription cancellations
+SELECT Region, COUNT(Canceled) AS CancelledSubscriptions
+FROM ProjectCustomerData
+WHERE Canceled = 1
+GROUP BY Region
+ORDER BY CancelledSubscriptions DESC
 
 #Total number of active and cancelled subscriptions
 SELECT Region, 
